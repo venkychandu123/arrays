@@ -1,0 +1,11 @@
+h2::before{
+    counter-increment: section;
+    content:"sectoin" counter(section) ":";
+}
+h2{
+    counter-increment: section;
+}
+h2::before{
+counter-increment: subsection;
+content: "section" counter(subsection) ":";
+}
